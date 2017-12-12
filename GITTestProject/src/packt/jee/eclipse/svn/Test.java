@@ -9,7 +9,7 @@ package packt.jee.eclipse.svn;
  */
 public class Test {
     public Test(){
-	System.out.println("Hello World");
+	System.out.println("Hello World and Inhabitants");
 	
     }
     
