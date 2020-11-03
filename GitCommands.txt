@@ -1,0 +1,82 @@
+"To add a new repo:
+
+Option 1: 
+-----------
+First create the repo in github ( make sure to chosse gitingore->java/*/etc., which will then show a master branch), copy the repo link and then go to your source folder in local machine and do the following :
+git init 
+git remote add origin https://github.com/SonyMC/library-apis.git
+git pull origin main ( * for non-java) 
+** git pull origin master
+git add -A 
+git commit -m "Initial Commit"
+git push origin master
+
+
+Option 2
+--------
+*** Alternate method:
+irst create the repo in github
+git init
+git add * 
+git add .gitignore -> add tehe gitignore file
+git commit -m "first commit"
+git remote add origin https://github.com/SonyMC/azure-devops-kubernetes-terraform-pipeline.git
+git push origin master
+
+
+
+git checkout -b develop              			-> new branch called develop
+git push origin develop		      			-> push origin to new branch
+git pull origin develop					-> now work in develop branch 
+
+git checkout -b feature/publisher-create-api	        -> new branch called feature/publisher-create-api		
+
+git checkout develop					-> switch to branch develop
+git pull origin develop					-> pull all merged changes from origin to local repository  
+git checkout -b feature/publisher-get-api		-> now do a virtual checkout to a new branch called feature/publisher-get-api
+git status 						-> do status check to see which files have changed 
+git add -A 						-> add all files to repo 
+git commit -m "Publisher Create API Working "		-> commit the changes with approproate cooment 
+git push origin feature/publisher-get-api		-> now push changes to virtual checkout branch thus making it real
+
+**After this do the code changes in local( which will have changes from develop and later merge teh changes  to develop and origin  through GITHUB UI 
+
+git checkout develop 					-> switch to branch develop
+git pull origin develop					-> pull all merged changes from origin to local repository  
+git checkout -b feature/publisher-update-api		-> now checkout to a new branch called feature/publisher-update-api
+git status
+git add -A
+git commit -m "Publisher Update API Working "
+git push origin feature/publisher-update-api
+
+git checkout develop 					-> switch to branch develop
+git pull origin develop					-> pull all merged changes from origin to local repository  
+git checkout -b techdebt/exception-handling
+git status
+git add -A
+git commit -m "Publisher API Exception Handling working "
+git push origin techdebt/exception-handling
+
+
+git checkout develop 					-> switch to branch develop
+git pull origin develop					-> pull all merged changes from origin to local repository  
+git checkout -b feature/issue-books
+git status
+git add -A
+git commit -m "Issue Books API  working "
+git push origin feature/issue-books
+
+git checkout develop 					-> switch to branch develop
+git pull origin develop					-> pull all merged changes from origin to local repository  
+git checkout -b tech-debt/more-integration-tests
+git status
+git add -A
+git commit -m "More Integration Tests "
+git push origin tech-debt/more-integration-tests
+
+
+tech-debt/enable-cors
+
+
+
+
