@@ -6,7 +6,7 @@ First create the repo in github ( make sure to chosse gitingore->java/*/etc., wh
 git init 
 git remote add origin https://github.com/SonyMC/library-apis.git
 git pull origin main ( * for non-java) 
-** git pull origin master
+** git pull origin master ( for java)
 git add -A 
 git commit -m "Initial Commit"
 git push origin master
@@ -15,7 +15,7 @@ git push origin master
 Option 2
 --------
 *** Alternate method:
-irst create the repo in github
+First create the repo in github
 git init
 git add * 
 git add .gitignore -> add tehe gitignore file
@@ -24,15 +24,14 @@ git remote add origin https://github.com/SonyMC/azure-devops-kubernetes-terrafor
 git push origin master
 
 Pull files from a master branch to local repo:
------------------------------------------------
 git pull origin master ->  pull from master branch to repo
 
+
+
 Push files from local repo to master brancH;
-------------------------------------------
+--------------------------------------------
 git add * 
 git commit -m " whatever comment"
-git push  origin master
-OR
 git push -u origin master
 
 **************
